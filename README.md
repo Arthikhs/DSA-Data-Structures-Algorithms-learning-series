@@ -11,6 +11,9 @@ A collection of Data Structures and Algorithms problems solved in Java.
 └── Arrays/
     ├── p1movezeroseend.java
     ├── p2movezerosfirst.java
+    ├── p3smallandlargst.java
+    ├── p4ksmallandlargst.java
+    ├── p5thirdmaximumnumber.java
     └── p6twosum.java
 ```
 
@@ -60,7 +63,68 @@ Output: 0 0 0 1 3 12
 
 ---
 
-#### 3. Two Sum — `p6twosum.java`
+#### 3. Smallest and Largest — `p3smallandlargst.java`
+
+**Problem:** Given an array, find the minimum and maximum elements.
+
+**Approach:** Linear scan
+- Initialize `min` and `max` with the first element
+- Iterate through the array and update `min` and `max` accordingly
+
+**Example:**
+```
+Input:  5
+        3 1 4 1 5
+Output: Minimum: 1
+        Maximum: 5
+```
+
+**Time Complexity:** O(n)  
+**Space Complexity:** O(1)
+
+---
+
+#### 4. Second Largest — `p4ksmallandlargst.java`
+
+**Problem:** Given an array, find the second largest element.
+
+**Approach:** Single pass with two variables
+- Track `first` and `second` largest
+- Update both while iterating, skipping duplicates
+
+**Example:**
+```
+Input:  5
+        3 1 4 1 5
+Output: Second Largest: 4
+```
+
+**Time Complexity:** O(n)  
+**Space Complexity:** O(1)
+
+---
+
+#### 5. Third Maximum Number — `p5thirdmaximumnumber.java`
+
+**Problem:** Given an array, find the third maximum distinct element.
+
+**Approach:** Single pass with three variables
+- Track `first`, `second`, and `third` largest
+- Update all three while iterating, skipping duplicates
+
+**Example:**
+```
+Input:  5
+        3 1 4 1 5
+Output: Second Largest: 3
+```
+
+**Time Complexity:** O(n)  
+**Space Complexity:** O(1)
+
+---
+
+#### 6. Two Sum — `p6twosum.java`
 
 **Problem:** Given an array and a target value, find the indices of the two numbers that add up to the target.
 
@@ -104,7 +168,7 @@ Output: 0 1
 
 | Topic   | Problems Solved |
 |---------|----------------|
-| Arrays  | 3              |
+| Arrays  | 6              |
 
 ---
 
